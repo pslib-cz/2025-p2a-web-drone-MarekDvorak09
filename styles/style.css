@@ -2,15 +2,15 @@
 
 @import url("normalise.css");
 
-@import url("https://piscum.photos/300/200.webp?random=1") layer(init);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap") layer(init);
 
-@layer design {
+@layer init {
     :root {
     color-scheme: light dark;
     --header-bg-color: light dark(#3b3e40,#3b3e40);
     --header-text-color: light dark(#fff,#fff)
     --primary-color: light dark(#66d4d4,#2b5a5a);
-    --secondary-color:#fff;
+    --secondary-color:(#fff,#fff);
     --text-color: light dark(#000,#fff);
 }
 html {
@@ -18,21 +18,65 @@ html {
     font-size: 100%;
     color:var(--text-color);
 }
-body {
-    background-color: var(--bg-color);
 }
-.header {
-    background-image: url("../images/header-2560w.webp");
-    background-size: cover;
-    background-position: top left;
-    background-color: var(--header-bg-color);
-    color:var(--header-text-color);
-    line-height: 1.5;
+
+@layer design{
+    body {
+        background-color: var(--bg-color);
+    }
+    .main{
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    h1{
+        font-size:  4rem;
+        font-weight: extra-bold;
+       
+    }
+    .img-fluid{
+        display:block;
+        width:100%;
+        height: auto;
+    }
+
+    .header {
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover;
+        background-position: top left;
+        background-color: var(--header-bg-color);
+        color:var(--header-text-color);
+        line-height: 1.5;
+        padding: 1em;
+    }
+
+    .header__nav{
+        text-align:center;
+    }
+    .header__link{
+       
 }
-.header__link{
+    .header__intro{
+    margin-top: 10vh;
+    }
+.button{
     display: inline-block;
-    text-align:center;
-    
+    border-radius: .5rem;
+    padding: 0,75mm 2em;
+}
+.button--light{
+background-color: var(--secondary-color);
+color: var(--text-color)
+}
+.img-block{
+    margin:0;
+
+}
+.img-block__caption{
+
+    text-align: center;
+    margin-top: 0,5em;
 }
 }
+
 
