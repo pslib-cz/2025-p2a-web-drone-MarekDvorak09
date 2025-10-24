@@ -1,82 +1,166 @@
-@layer reset, init, design;
+@layer base, setup, layout;
 
-@import url("normalise.css");
+@import url(./normalize.css) layer(base);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap")
+layer(setup);
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap") layer(init);
-
-@layer init {
-    :root {
+@layer setup {
+  :root {
     color-scheme: light dark;
-    --header-bg-color: light dark(#3b3e40,#3b3e40);
-    --header-text-color: light dark(#fff,#fff)
-    --primary-color: light dark(#66d4d4,#2b5a5a);
-    --secondary-color:(#fff,#fff);
-    --text-color: light dark(#000,#fff);
-}
-html {
-    font-family:"Open Sans",sans-serif;
+    --hero-bg-color: light-dark(#3b3d40, #3b3d40);
+    --hero-text-color: light-dark(#fff, #fff);
+    --primary-color: light-dark(#66d4d4, #2b5a5a);
+    --secondary-color: light-dark(#fff, #fff);
+    --text-color: light-dark(#000, #fff);
+    --bg-color: light-dark(#fff, #000);
+    --text-black: #000;
+    --text-white: #fff;
+  }
+
+  html {
+    font-family: "Open Sans", sans-serif;
     font-size: 100%;
-    color:var(--text-color);
-}
+    color: var(--text-color);
+  }
 }
 
-@layer design{
-    body {
-        background-color: var(--bg-color);
-    }
-    .main{
-        padding: 1rem;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    h1{
-        font-size:  4rem;
-        font-weight: extra-bold;
-       
-    }
-    .img-fluid{
-        display:block;
-        width:100%;
-        height: auto;
-    }
+@layer layout {
+  body {
+    background-color: var(--bg-color);
+  }
 
-    .header {
-        background-image: url("../images/header-2560w.webp");
-        background-size: cover;
-        background-position: top left;
-        background-color: var(--header-bg-color);
-        color:var(--header-text-color);
-        line-height: 1.5;
-        padding: 1em;
-    }
+  .hero {
+    padding: 1rem;
+    background-image: url("../images/header-2560w.webp");
+    background-size: cover;
+    background-position: top left;
+    background-color: var(--hero-bg-color);
+    color: var(--hero-text-color);
+    line-height: 1.5;
+  }
 
-    .header__nav{
-        text-align:center;
-    }
-    .header__link{
-       
-}
-    .header__intro{
+  .hero-intro {
     margin-top: 10vh;
-    }
-.button{
-    display: inline-block;
-    border-radius: .5rem;
-    padding: 0,75mm 2em;
-}
-.button--light{
-background-color: var(--secondary-color);
-color: var(--text-color)
-}
-.img-block{
-    margin:0;
+  }
 
-}
-.img-block__caption{
-
+  .hero-nav {
     text-align: center;
-    margin-top: 0,5em;
-}
-}
+  }
 
+  .site-footer {
+    background-color: var(--hero-bg-color);
+    color: var(--hero-text-color);
+    text-align: center;
+    padding: 2em 0;
+  }
 
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+
+  .btn {
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.75em 2em;
+  }
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--text-white);
+  }
+
+  .btn-light {
+    background-color: var(--secondary-color);
+    color: var(--text-black);
+    text-decoration: none;
+  }
+
+  main {
+    padding: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .img-full {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .img-half {
+    display: inline-block;
+    width: auto;
+    height: 22em;
+    margin: 1.0625em 0.4em 0 0;
+  }
+
+  .image-block {
+    margin: 0;
+  }
+
+  .image-caption {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  .title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+  }
+
+  .title-h1 {
+    font-size: calc(1em + 3vw);
+  }
+
+  .title-h3 {
+    font-size: 1.125em;
+  }
+
+  .title-xl {
+    font-size: 2em;
+  }
+
+  .info-box {
+    margin: 1em 0;
+    padding: 1rem;
+    border: 3px solid var(--primary-color);
+  }
+
+  .info-box-large {
+    background-color: var(--hero-bg-color);
+    color: var(--hero-text-color);
+    border: none;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .info-box-title {
+    margin-bottom: 1.5em;
+  }
+
+  .features {
+    margin: 2rem 0;
+  }
+
+  .feature-item {
+    margin: 1rem 0;
+  }
+
+  .feature-item::marker {
+    color: var(--primary-color);
+  }
+
+  .product-card {
+    padding: 1em;
+    vertical-align: top;
+    display: inline-block;
+    max-width: 17.5em;
+  }
+}
