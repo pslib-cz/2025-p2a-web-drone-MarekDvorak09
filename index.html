@@ -1,105 +1,180 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Boxmodel Drone 2025</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Boxmodel Drone 2025</title>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-nav">
-      <a class="hero-link" href="./index.html">
-        <img class="hero-logo" src="./images/logo.svg" alt="Logo DJI">
-      </a>
-    </div>
-    <div class="hero-intro">
-      <h1>Dron DJI Mini 4 Pro</h1>
-      <p>Pořizujte dechberoucí letecké záběry s dosud nejpokročilejším dronem DJI s minikamerou &ndash;&nbsp;Mini 4 Pro. Díky výkonným zobrazovacím funkcím, všesměrovému snímání překážek, funkcí&nbsp;ActiveTrack 360°&nbsp;s novým režimem Trace a podporou přenosu v&nbsp;rozlišení FullHD&nbsp;na vzdálenost&nbsp;až 20 km, dokáže oslovit nejen začátečníky, ale i náročnější uživatele kvadrokoptér.</p>
-      <a class="btn btn-light" href="#">prohlédnout funkce</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="params">
-      <h2>Popis a parametry dronu</h2>
-      <p>Mini 4 Pro stejně jako jeho předchůdci <strong>váží méně než 249 g</strong> pro pohodlné používání na cestách a <b>mírnější legislativní nároky</b> na piloty a provozovatele v různých regionech.</p>
-      <p>Kamera Mini 4 Pro se chlubí <b>1/1,3palcovým snímačem CMOS</b> s funkcí Dual Native ISO Fusion, <b>clonou f/1,7</b> a 2,4μm pixely 4 v 1, takže snadno zachytíte i složitější detaily...</p>
-
-      <figure class="image-block">
-        <img class="img-full" src="./images/dron-v-letu.webp" alt="dron v letu">
-        <figcaption class="image-caption">Pohled zpředu na drona DJI Mini 4 Pro</figcaption>
-      </figure>
-
-      <div class="info-box">
-        <header class="info-box-title">
-          <p class="title title-h3">Kvalitní noční záběry z dronu a RAW</p>
-        </header>
-        <p class="info-box-content">Vylepšený algoritmus redukce šumu nočních snímků...</p>
-      </div>
-
-      <div class="features">
-        <p class="title title-h3">Chytré režimy pořizování záběrů</p>
-        <ul>
-          <li class="feature-item"><b>MasterShots</b> – dynamické šablony...</li>
-          <li class="feature-item"><b>QuickShots</b> – režimy Dronie, Circle...</li>
-          <li class="feature-item"><b>Hyperlapse</b> – režimy Free, Waypoint...</li>
-          <li class="feature-item"><b>Panorama</b> – 180°, Wide, Vertical...</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="variants">
-      <h2>Dostupná provedení</h2>
-
-      <div class="product-card">
-        <header>
-          <img class="img-full" src="./images/dron-DJI-Mini-4-Pro-RC-N2.webp" alt="DJI-Mini-4-Pro">
-        </header>
-        <div class="card-content">
-          <p class="title title-h3">Dron DJI Mini 4 Pro + RC-N2</p>
-          <p>V tomto balíčku získáte dron DJI Mini 4 Pro se základním ovladačem DJI RC-NC.</p>
+    <header class="header">
+        <div class="header__nav">
+            <a class="header__link" href="./index.html">
+                <img class="header__image" src="./images/logo.svg" alt="logo DJI">
+            </a>
         </div>
-        <footer>
-          <a class="btn btn-primary" href="#">zakoupit nyní</a>
-        </footer>
-      </div>
-
-      <div class="product-card">
-        <header>
-          <img class="img-full" src="./images/dron-DJI-Mini-4-Pro-Fly-More-Combo-DJI-RC-2.webp" alt="DJI-Mini-4-Pro-Fly-More-Combo">
-        </header>
-        <div class="card-content">
-          <p class="title title-h3">Dron DJI Mini 4 Pro + RC-N2</p>
-          <p>V tomto balíčku získáte dron DJI Mini 4 Pro se základním ovladačem DJI RC-NC.</p>
+        <div class="header__intro">
+            <h1>Dron DJI Mini 4 Pro</h1>
+            <p>Pořizujte dechberoucí letecké záběry s dosud nejpokročilejším dronem DJI s minikamerou &ndash;&nbsp; Mini 4 Pro. Díky výkonným zobrazovacím funkcím, všesměrovému snímání překážek, funkcí ActiveTrack 360° s novým režimem Trace a podporou přenosu v rozlišení FullHD na vzdálenost až 20 km, dokáže oslovit nejen začátečníky, ale i náročnější uživatele kvadrokoptér.</p>
+            <a href="#" class="button button-light">Prohlédnout funkce</a>
         </div>
-        <footer>
-          <a class="btn btn-primary" href="#">zakoupit nyní</a>
-        </footer>
-      </div>
+    </header>
+    <main>
+        <section class="params">
+            <h2>Popis a parametry dronu</h2>
+            <p> Mini 4 Pro stejně jako jeho předchůdci <b>váží méně než 249 g</b> pro pohodlné používání na cestách a <b>mírnější legislativní nároky</b> na piloty a provozovatele v různých regionech.</p>
+            <p>Kamera Mini 4 Pro se chlubí <b>1/1,3palcovým snímačem CMOS</b> s funkcí Dual Native ISO Fusion, <b>clonou f/1,7</b> a 2,4μm pixely 4 v 1, takže snadno zachytíte i složitější detaily. Díky <b>HDR videu v 4K/60 fps kvalitě</b> a zpomalenému videu při <b>4K/100 fps</b> můžete zachytit detailní záběry, zatímco se <b>10-bit D-Log M</b> postará o ohromující škálu 1,07 bilionu barev a HLG zase o větší flexibilitu při editaci a sdílení. HLG díky vysokému dynamickému rozsahu zaručuje, že <b>barvy a jas zůstanou přirozené</b> a realistické <b>bez nutnosti úprav</b> nebo konverze formátu.</p>
+            <figure class="img-block">
+                <img class="img-fluid" src="./images/dron-v-letu.webp" alt="dron DJI">
+                <figcaption class="img-block__caption">Pohled zpředu na drona DJI Mini 4 Pro </figcaption>
+            </figure>
+            <div class="info-box">
+                <header class="info-box__title">
+                    <p class="info-box__h1">Kvalitní noční záběry z dronu a RAW</p>
+                </header>
+                <div class="info-box__content">
+                    <p>Vylepšený algoritmus redukce šumu nočních snímků u modelu Mini 4 Pro vám pomůže pořizovat <b>jasnější a kvalitnější záběry</b>, i <b>za šera nebo v noci</b>. Každý drobný detail navíc můžete zaznamenat díky <b>48MP RAW</b> a nové generaci SmartPhoto, která kombinuje <b>HDR zobrazování</b>, rozpoznávání scén a mnoho dalších funkcí.</p>
+                </div>
+            </div>
+            <div class="offer-box">
+                <header class="offer-box__title">
+                    <p class="offer-box__h1">Chytré režimy pořizování záběrů</p>
+                </header>
+                <div class="offer-box__content">
+                    <p>Mini 4 Pro nabízí 3 způsoby, jak můžete snadno pořídit snímky, které potřebujete: <b>Spotlight, Point of Interest</b> a novou revoluční funkci <b>ActiveTrack 360°</b> s vylepšenými možnostmi sledování objektu. K dispozici jsou vám jako obvykle také <b>automatické chytré režimy</b>.</p>
+                </div>
+                <div class="offer-box__list">
+                    <ul>
+                        <li class="offer-box__item li-style">
+                            <p><b>MasterShots</b> nabízí dynamické šablony pro pohyby kamerou přizpůsobené pro portrétní snímky, záběry zblízka, nebo z velké vzdálenosti.</p>
+                        </li>
+                        <li class="offer-box__item li-style">
+                            <p><b>QuickShots</b> nabízí režimy Dronie, Circle, Helix, Rocket, Boomerang a Asteroid.</p>
+                        </li>
+                        <li class="offer-box__item li-style">
+                            <p><b>Hyperlapse</b> nabízí režimy Free, Waypoint, Circle a Course Lock s neomezenou dobou snímání&nbsp;a podporuje také vytváření kompozice během natáčení.</p>
+                        </li>
+                        <li class="offer-box__item li-style">
+                            <p><b>Panorama</b> podporuje 180°, Wide, Vertical a Sphere panoramatické snímky.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-      <div class="info-box-large">
-        <header class="info-box-title">
-          <p class="title title-h1">Mini to the <span class="title-xl">Max</span></p>
-        </header>
-        <p class="info-box-content">Nakupte nyní ve verzi Fly More Combo s 10% slevou za 28&nbsp;990 Kč.</p>
-        <footer class="info-box-footer">
-          <a href="#" class="btn btn-light">zakoupit se slevou</a>
-        </footer>
-      </div>
-    </section>
 
-    <section class="gallery">
-      <h2>Galerie</h2>
-      <img src="./images/gallery/dron-dji-mini-4-pro-a-ovladac-dji-rc-2.webp" alt="" class="img-full">
-      <img src="./images/gallery/ovladani-dron-dji-mini-4-pro-tn.webp" alt="" class="img-half">
-      <img src="./images/gallery/dron-dji-mini-4-pro-a-zapad-slunce.webp" alt="" class="img-half">
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>www.dji.com</p>
-  </footer>
+            
+            <div class="drone-store">
+                <header class="drone-store__title">
+                    <p class="drone-store__h1">Dostupná provedení</p>
+                </header>
+                <div class="drone-card">
+                    <div class="card">
+                        <header>
+                            <figure class="img-block">
+                                <img class="img-fluid" src="./images/dron-DJI-Mini-4-Pro-RC-N2.webp" alt="dron DJI">
+                            </figure>
+                        </header>
+                        <div>
+                            <p class="drone-store__item-h1">Dron DJI Mini 4 Pro + RC-N2</p>
+                        </div>
+                        <div>
+                            <p class="drone-store__content">V tomto balíčku získáte dron DJI Mini 4 Pro se základním ovladačem DJI RC-NC</p>
+                        </div>
+                        <div>
+                            <a href="#" class="button button-blue">Zakoupit nyní</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <header>
+                            <figure class="img-block">
+                                <img class="img-fluid" src="./images/dron-DJI-Mini-4-Pro-RC-N2.webp" alt="dron DJI">
+                            </figure>
+                        </header>
+                        <div>
+                            <p class="drone-store__item-h1">Dron DJI Mini 4 Pro + RC-N2</p>
+                        </div>
+                        <div>
+                            <p class="drone-store__content">V tomto balíčku získáte dron DJI Mini 4 Pro se základním ovladačem DJI RC-NC</p>
+                        </div>
+                        <div>
+                            <a href="#" class="button button-blue">Zakoupit nyní</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <header>
+                            <figure class="img-block">
+                                <img class="img-fluid" src="./images/dron-DJI-Mini-4-Pro-RC-N2.webp" alt="dron DJI">
+                            </figure>
+                        </header>
+                        <div>
+                            <p class="drone-store__item-h1">Dron DJI Mini 4 Pro + RC-N2</p>
+                        </div>
+                        <div>
+                            <p class="drone-store__content">V tomto balíčku získáte dron</p>
+                        </div>
+                        <div>
+                            <a href="#" class="button button-blue">Zakoupit nyní</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <header>
+                            <figure class="img-block">
+                                <img class="img-fluid" src="./images/dron-DJI-Mini-4-Pro-RC-N2.webp" alt="dron DJI">
+                            </figure>
+                        </header>
+                        <div>
+                            <p class="drone-store__item-h1">Dron DJI Mini 4 Pro + RC-N2 Dron DJI Mini 4 Pro + RC-N2</p>
+                        </div>
+                        <div>
+                            <p class="drone-store__content">V tomto balíčku získáte dron DJI Mini 4 Pro se základním ovladačem DJI RC-NC</p>
+                        </div>
+                        <div>
+                            <a href="#" class="button button-blue">Zakoupit nyní</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <header>
+                            <figure class="img-block">
+                                <img class="img-fluid" src="./images/dron-DJI-Mini-4-Pro-RC-N2.webp" alt="dron DJI">
+                            </figure>
+                        </header>
+                        <div>
+                            <p class="drone-store__item-h1">Dron DJI Mini 4 Pro</p>
+                        </div>
+                        <div>
+                            <p class="drone-store__content">V tomto balíčku získáte dron DJI Mini 4 Pro se základním ovladačem DJI RC-NC</p>
+                        </div>
+                        <div>
+                            <a href="#" class="button button-blue">Zakoupit nyní</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                <div class="drone-discount">
+                    <header class="drone-discount__title">
+                        <p class="drone-discount__h1">Mini to the <span class="h1__max">Max</span></p>
+                    </header>
+                    <p>Nakupte nyní ve verzi Fly More Combo s 10% slevou za jedinečnou cenu 28 990 Kč.</p>
+                    <a href="#" class="button button-light">Zakoupit se slevou</a>
+                </div>
+            </div>
+        </section>
+        <section class="galerie">
+            <h2 class="galerie__title">Galerie</h2>
+
+            <div class="galerie__row"><a
+                class="galerie__row__item galerie__row__item--w100" href="./images/gallery/dron-dji-mini-4-pro-a-ovladac-dji-rc-2.webp"><img class="img-fluid" src="./images/gallery/dron-dji-mini-4-pro-a-ovladac-dji-rc-2.webp" alt="dron dji mini 4 pro a ovladac dji rc2"></a><a
+                class="galerie__row__item" href="./images/gallery/ovladani-dron-dji-mini-4-pro-tn.webp"><img class="img-fluid" src="./images/gallery/ovladani-dron-dji-mini-4-pro-tn.webp" alt="dron dji mini 4 pro fly more combo"></a><a 
+                class="galerie__row__item" href="./images/gallery/dron-dji-mini-4-pro-a-zapad-slunce.jpg"><img class="img-fluid" src="./images/gallery/dron-dji-mini-4-pro-a-zapad-slunce-tn.jpg" alt="dron dji mini 4 pro fly more combo"></a>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer__link" href="https://www.dji.com/cz">www.dji.com</a>
+    </footer>
 </body>
 </html>

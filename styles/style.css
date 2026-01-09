@@ -1,166 +1,218 @@
-@layer base, setup, layout;
+@layer reset, init, design;
 
-@import url(./normalize.css) layer(base);
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap")
-layer(setup);
+@import url(./normalize.css) layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer(init);
 
-@layer setup {
-  :root {
-    color-scheme: light dark;
-    --hero-bg-color: light-dark(#3b3d40, #3b3d40);
-    --hero-text-color: light-dark(#fff, #fff);
-    --primary-color: light-dark(#66d4d4, #2b5a5a);
-    --secondary-color: light-dark(#fff, #fff);
-    --text-color: light-dark(#000, #fff);
-    --bg-color: light-dark(#fff, #000);
-    --text-black: #000;
-    --text-white: #fff;
-  }
-
-  html {
-    font-family: "Open Sans", sans-serif;
-    font-size: 100%;
-    color: var(--text-color);
-  }
+@layer init {
+    :root{
+        color-scheme: light dark;
+        --header-bg-color: light-dark(#3B3E40, #3B3E40);
+        --header-text-color: light-dark(#FFF, #FFF);
+        --primary-color: light-dark(#66D4D4, #2b5757);
+        --text-color-primary: light-dark(#FFF, #FFF);
+        --secondary-color: light-dark(#FFF, #FFF);
+        --text-color: light-dark(#000, #FFF);
+    }
+    html {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 100%;  /* default: 16px */
+        color: var(--text-color);
+    }
 }
 
-@layer layout {
-  body {
-    background-color: var(--bg-color);
-  }
-
-  .hero {
-    padding: 1rem;
-    background-image: url("../images/header-2560w.webp");
-    background-size: cover;
-    background-position: top left;
-    background-color: var(--hero-bg-color);
-    color: var(--hero-text-color);
-    line-height: 1.5;
-  }
-
-  .hero-intro {
-    margin-top: 10vh;
-  }
-
-  .hero-nav {
-    text-align: center;
-  }
-
-  .site-footer {
-    background-color: var(--hero-bg-color);
-    color: var(--hero-text-color);
-    text-align: center;
-    padding: 2em 0;
-  }
-
-  h1 {
-    font-size: 4rem;
-    font-weight: 800;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-    font-weight: bold;
-  }
-
-  .btn {
-    display: inline-block;
-    border-radius: 0.5rem;
-    padding: 0.75em 2em;
-  }
-
-  .btn-primary {
-    background-color: var(--primary-color);
-    text-decoration: none;
-    color: var(--text-white);
-  }
-
-  .btn-light {
-    background-color: var(--secondary-color);
-    color: var(--text-black);
-    text-decoration: none;
-  }
-
-  main {
-    padding: 1rem;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
-  .img-full {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .img-half {
-    display: inline-block;
-    width: auto;
-    height: 22em;
-    margin: 1.0625em 0.4em 0 0;
-  }
-
-  .image-block {
-    margin: 0;
-  }
-
-  .image-caption {
-    text-align: center;
-    margin-top: 0.5em;
-  }
-
-  .title {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-  }
-
-  .title-h1 {
-    font-size: calc(1em + 3vw);
-  }
-
-  .title-h3 {
-    font-size: 1.125em;
-  }
-
-  .title-xl {
-    font-size: 2em;
-  }
-
-  .info-box {
-    margin: 1em 0;
-    padding: 1rem;
-    border: 3px solid var(--primary-color);
-  }
-
-  .info-box-large {
-    background-color: var(--hero-bg-color);
-    color: var(--hero-text-color);
-    border: none;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .info-box-title {
-    margin-bottom: 1.5em;
-  }
-
-  .features {
-    margin: 2rem 0;
-  }
-
-  .feature-item {
-    margin: 1rem 0;
-  }
-
-  .feature-item::marker {
-    color: var(--primary-color);
-  }
-
-  .product-card {
-    padding: 1em;
-    vertical-align: top;
-    display: inline-block;
-    max-width: 17.5em;
-  }
+@layer design {
+    body{
+        background-color: var(--bg-color);
+    }
+    main {
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: extra-bold; /* 800 */
+    }
+    .header {
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover;
+        background-position: top left;
+        background-color: var(--header-bg-color);
+        color: var(--header-text-color);
+        line-height: 1.5;
+        padding: 1rem;
+    }
+    .header__nav {
+        text-align: center;
+    }
+    .header__intro {
+        margin-top: 10vh;
+    }
+    .button {
+        display: inline-block;
+        padding: 0.75em 2em;
+        border-radius: 0.5rem;   
+    }
+    .button-light {
+        background-color: var(--secondary-color);
+        color: black;
+        text-decoration: none;
+    }
+    .button-blue {
+        background-color: var(--primary-color);
+        color: var(--text-color-primary);
+        text-decoration: none;
+    }
+    .img-fluid {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .img-block {
+        margin: 0;
+    }
+    .img-block__caption {
+        text-align: center;
+        font-size: 14px;
+        padding: 16px;
+        margin-bottom: 1em;
+    }
+    .info-box {
+        padding: 1.5rem;
+        border-width: 3px;
+        border: solid var(--primary-color);
+    }
+    .info-box__title {
+        color: var(--text-color);
+        margin-bottom: 1em;
+    }
+    .info-box__h1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .info-box__content {
+        color: var(--text-color);
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    .offer-box {
+        color: var(--text-color);
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .offer-box__title {
+        color: var(--text-color);
+        margin-bottom: 1em;
+    }
+    .offer-box__h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+    .offer-box__content {
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .offer-box__list {
+        list-style: none;
+        padding-left: 8px;
+    }
+    .li-style::marker {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+    .card {
+        padding: 1em;
+        border: 2px solid;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-row-end: span 4;
+    }
+    .drone-card{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(15rem,100%),1fr));
+        grid-template-rows: subgrid;
+        grid-gap: 10px;
+    };
+    .drone-store__title {
+        display: block;
+        color: var(--text-color);
+        margin-bottom: 5px;
+    }
+    .drone-store__h1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .drone-store__item-h1 {
+        color: var(--text-color);
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 0.2em;
+        margin-bottom: 1em;
+    }
+    .drone-store__content {
+        color: var(--text-color);
+        max-width: 280px;
+    }
+    .drone-discount {
+        color: white;
+        background-color: var(--header-bg-color);
+        width: 100%;
+        padding: 2rem;
+        padding-top: 1rem;
+        border-radius: 0.2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .drone-discount__title {
+        color: white;
+        margin-bottom: 1em;
+    }
+    .drone-discount__h1 {
+        font-size: calc(2.1em + 1vw);
+        font-weight: 700;
+        margin-bottom: 1em;
+        margin-top: 1rem;
+    }
+    .h1__max {
+        font-size: calc(2.5em + 2vw);
+    }
+    .footer {
+        background-color: var(--header-bg-color);
+        text-align: center;
+        padding: 3rem;
+    }
+    .footer__content {
+        color: var(--header-text-color);
+        text-decoration: none;
+    }
+    .galerie{
+        margin-top: 6rem;
+        box-sizing: border-box;
+        margin: -1em;
+       }
+       .galerie__title{
+        padding-top: 6rem;
+       }
+       .galerie__row__item{
+        box-sizing: border-box;
+        width:calc(50% - 1em);
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5em;
+       }
+       .galerie__row__item--w100{
+        width:calc(100% - 0.5em);
+       }
+       .footer{
+        background-color: var(--header-bg-color);
+        margin-top: 3rem;
+        padding: 3rem;
+        text-align: center;
+       }
+       .footer__link{
+        color: var(--header-text-color);
+        text-decoration: none;
+       }
 }
